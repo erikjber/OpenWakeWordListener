@@ -1,10 +1,10 @@
 [build-system]
-requires = ["hatchling >= 1.26", "numpy", "paho-mqtt", "torch", "openai-whisper", "silero_vad"]
+requires = ["hatchling >= 1.26"]
 build-backend = "hatchling.build"
 
 [project]
 name = "openwakewordlistener"
-version = "0.0.2"
+version = "0.0.6"
 authors = [
   { name="Erik Berglund", email="erik.berglund@gmail.com" },
 ]
@@ -17,6 +17,9 @@ classifiers = [
 ]
 license = "CC-BY-SA-4.0"
 license-files = ["LICENSE"]
+dependencies = [
+     "paho-mqtt", "torch", "openai-whisper", "silero_vad"
+]
 
 [project.urls]
 Homepage = "https://github.com/erikjber/OpenWakeWordListener"

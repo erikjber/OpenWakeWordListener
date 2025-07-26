@@ -1,7 +1,7 @@
 import logging
 from argparse import ArgumentParser,ArgumentDefaultsHelpFormatter
 
-from wakeword_listener import WakeWordListener
+from .wakeword_listener import WakeWordListener
 
 def _parse_args():
     parser = ArgumentParser(
@@ -23,7 +23,7 @@ def _parse_args():
 
     return parser.parse_args()
 
-if __name__ == "__main__":
+def main():
     args = _parse_args()
     loglevel = logging.INFO
     if args.verbose:
@@ -38,3 +38,6 @@ if __name__ == "__main__":
                                          language=args.language,buffer_time_seconds=args.buffer,
                                          chunks_between_scans=args.chunks,speech_threshold=args.threshold)
     wakeword_listener.run()
+
+if __name__ == "__main__":
+    main()
