@@ -12,4 +12,7 @@ To run the detector standalone:
 
 Give the `-h` command line switch for a list of command line arguments.
 
+## Dependencies
+OpenWakeWordListener uses [Silero VAD](https://github.com/snakers4/silero-vad) for speech detection and [Whisper](https://github.com/openai/whisper) for speech decoding.
+
 
