@@ -6,12 +6,6 @@ Unfortunately the existing wake word detectors fall in two categories: the not v
 OpenWakeWordListener is sensitive, accurate, fast, and you can choose any wake word you like - you can even have multiple wake words.
 The trade-off is that OpenWakeWordListener requires more computing resources.
 
-## Running
-To run the detector standalone:
-`python src/openwakewordlistener/main.py`
-
-Give the `-h` command line switch for a list of command line arguments.
-
 ### Configuring Rhasspy
 1. Open the Rhasspy web UI.
 2. Click the little cog icon in the left margin to open the settings.
@@ -20,6 +14,14 @@ Give the `-h` command line switch for a list of command line arguments.
 5. Click "Save Settings"
 
 That's it! While you're in the settings, make note of which MQTT settings Rhasspy uses - you need to use the same settings for OpenWakeWordListener.
+
+If you are running Rhasspy as a [Home Assistant](https://www.home-assistant.io/) addon, make sure you have also installed the [Mosquitto MQTT broker add-on](https://github.com/home-assistant/addons/tree/master/mosquitto).
+
+### Running
+To run the detector standalone:
+`python src/openwakewordlistener/main.py`
+
+Give the `-h` command line switch for a list of command line arguments.
 
 ## Dependencies
 OpenWakeWordListener uses [Silero VAD](https://github.com/snakers4/silero-vad) for speech detection and [Whisper](https://github.com/openai/whisper) for speech decoding.
