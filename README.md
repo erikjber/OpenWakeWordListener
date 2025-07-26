@@ -15,8 +15,9 @@ Give the `-h` command line switch for a list of command line arguments.
 ### Configuring Rhasspy
 1. Open the Rhasspy web UI.
 2. Click the little cog icon in the left margin to open the settings.
-3. To the right of "Wake Word" press the drop-down menu and select "Hermes MQTT".
-4. Click "Save Settings"
+3. To the right of "MQTT", press the drop-down menu and select "External".
+4. To the right of "Wake Word" press the drop-down menu and select "Hermes MQTT".
+5. Click "Save Settings"
 
 That's it! While you're in the settings, make note of which MQTT settings Rhasspy uses - you need to use the same settings for OpenWakeWordListener.
 
