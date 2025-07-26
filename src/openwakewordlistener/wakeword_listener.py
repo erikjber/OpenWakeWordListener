@@ -7,7 +7,7 @@ import torch
 import whisper
 from silero_vad import (load_silero_vad, get_speech_timestamps)
 
-from audiodata import AudioData
+from .audiodata import AudioData
 
 torch.set_num_threads(max(multiprocessing.cpu_count() // 2, 1))
 
