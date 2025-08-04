@@ -6,6 +6,9 @@ Unfortunately the existing wake word detectors fall in two categories: the not v
 OpenWakeWordListener is sensitive, accurate, fast, and you can choose any wake word you like - you can even have multiple wake words or offload the wake word detection to another computer entirely. The wake word(s) are defined on the command line, you do not need to train a model for each wake word.
 The trade-off is that OpenWakeWordListener requires more computing resources.
 
+## Language support
+OpenWakeWordListener supports [all languages supported by Whisper](https://raw.githubusercontent.com/openai/whisper/refs/heads/main/language-breakdown.svg).
+
 ## Installation
 `pip install openwakewordlistener`
 
