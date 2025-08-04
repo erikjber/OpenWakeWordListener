@@ -61,7 +61,7 @@ These are the currently supported arguments:
     --threshold THRESHOLD
                         The threshold to use when deciding if sound is speech.
                         Lower value means fewer false negatives but is more
-                        CPU intensive. (default: 0.1)`
+                        CPU intensive. Range: 0 to 1. (default: 0.1)
 
 Example usage:
 

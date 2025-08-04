@@ -19,7 +19,7 @@ def _parse_args():
     parser.add_argument("-l","--language",type=str,default="english",help="The language to use. One of the OpenAI Whisper languages: https://github.com/openai/whisper. Set to \"any\" to accept any language")
     parser.add_argument("-b","--buffer",type=float,default=1,help="The buffer size to use, in seconds. Should be a little longer than the time it takes to say the longest wake word. Larger buffer is more CPU intensive.")
     parser.add_argument("--chunks",type=int,default=3,help="The number of chunks to add before processing the buffer. Lower value means faster reaction but more CPU intensive. A chunk is usually 64 ms long, so the default value of 3 processes the buffer every 192 ms, or roughly 5 times/second.")
-    parser.add_argument("--threshold",type=float,default=0.1,help="The threshold to use when deciding if sound is speech. Lower value means fewer false negatives but is more CPU intensive.")
+    parser.add_argument("--threshold",type=float,default=0.1,help="The threshold to use when deciding if sound is speech. Lower value means fewer false negatives but is more CPU intensive. Range: 0 to 1.")
 
     return parser.parse_args()
 
